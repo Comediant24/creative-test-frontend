@@ -2,6 +2,6 @@
   background-color: #0c092e;
   color: white;
   padding: 25px;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
 }

@@ -2,6 +2,10 @@
   flex-basis: 100%;
   border-right: 1px solid white;
   box-sizing: border-box;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .section:last-of-type {

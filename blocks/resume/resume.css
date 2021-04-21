@@ -1,0 +1,19 @@
+.resume {
+}
+
+.resume__section-title {
+  color: #fdd56e;
+  margin: 0;
+  font-size: 50px;
+}
+
+.resume__section-text {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.resume__section-text_highlighter {
+  background-color: #5932cb;
+  font-size: 22px;
+  font-weight: bold;
+}
