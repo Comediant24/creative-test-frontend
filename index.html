@@ -5,9 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Creative Junior</title>
   </head>
-  <body>
+  <body class="root">
+    <div class="page">
+      <header class="header">
+        <h1 class="header__logo">Title</h1>
+        <div class="header__menu-toggle">
+          <div class="header__toggle-wrapper header__toggle-wrapper_menu">
+            <span
+              class="header__menu-icon header__menu-icon_open material-icons"
+            >
+              menu
+            </span>
+          </div>
+          <div
+            class="header__toggle-wrapper header__toggle-wrapper_close header__toggle-wrapper_display_none"
+          >
+            <span
+              class="header__menu-icon header__menu-icon_close material-icons"
+            >
+              close
+            </span>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section sidebar">
+          <nav class="sidebar__nav navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">
+                  <span class="material-icons link__icons">
+                    alternate_email
+                  </span>
+                  <span class="link-title">Email</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">
+                  <span class="material-icons link__icons">
+                    alternate_email
+                  </span>
+                  <span class="link-title">Email</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">
+                  <span class="material-icons link__icons">
+                    alternate_email
+                  </span>
+                  <span class="link-title">Email</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link link">
+                  <span class="material-icons link__icons">
+                    alternate_email
+                  </span>
+                  <span class="link-title">Email</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="sidebar__hover"></div>
+        </section>
+        <section class="section resume">
+          <h3>Стек</h3>
+        </section>
+        <section class="section present">
+          <h3>Картинка</h3>
+        </section>
+      </main>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

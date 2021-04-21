@@ -1,0 +1,40 @@
+.header {
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border: 1px solid white;
+  align-items: center;
+}
+
+.header__logo {
+  margin: 0;
+}
+
+/* временные параметры для самолета */
+.header__toggle-wrapper {
+  width: 15px;
+  height: 15px;
+  border: 1px solid salmon;
+  cursor: pointer;
+}
+
+.header__menu-toggle {
+  display: none;
+}
+
+.header__menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header__menu-toggle {
+    display: flex;
+  }
+
+  .header__toggle-wrapper_display_none {
+    display: none;
+  }
+}

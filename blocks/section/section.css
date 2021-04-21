@@ -1,0 +1,9 @@
+.section {
+  flex-basis: 100%;
+  border-right: 1px solid white;
+  box-sizing: border-box;
+}
+
+.section:last-of-type {
+  border: none;
+}
