@@ -11,13 +11,12 @@
 .header__logo {
   margin: 0;
   font-style: italic;
-  text-shadow: 3px 3px 0 red;
+  text-shadow: 3px 3px 0 #ef001e;
   font-size: 56px;
 }
 
 .header__title {
   font-style: italic;
-  /* text-shadow: 3px 3px 0 red; */
   font-size: 46px;
 }
 

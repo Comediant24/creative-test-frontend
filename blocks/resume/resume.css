@@ -1,19 +1,46 @@
 .resume {
 }
 
-.resume__section-title {
-  color: #fdd56e;
+.resume__item-container {
+  display: flex;
+}
+
+.resume__content {
+  flex-basis: 100%;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  height: 100%;
+}
+
+.resume__content:last-of-type {
+  border-right: none;
+}
+.resume__content-wrapper {
+  padding: 23px;
+}
+
+.resume__content-title {
+  color: #ffd519;
   margin: 0;
   font-size: 50px;
 }
 
-.resume__section-text {
+.resume__content-text {
   font-size: 18px;
   line-height: 1.35;
 }
 
-.resume__section-text_highlighter {
+.resume__content-text_highlighter {
   background-color: #5932cb;
   font-size: 22px;
   font-weight: bold;
+}
+
+.resume__image-container {
+  display: flex;
+  align-items: center;
+}
+
+.resume__image {
+  width: 100%;
 }
