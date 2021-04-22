@@ -24,13 +24,6 @@
   font-style: normal;
   text-shadow: none;
 }
-/* временные параметры для самолета */
-.header__toggle-wrapper {
-  width: 15px;
-  height: 15px;
-  border: 1px solid salmon;
-  cursor: pointer;
-}
 
 .header__menu-toggle {
   display: none;
@@ -38,7 +31,17 @@
 
 .header__menu-icon {
   cursor: pointer;
-  display: none;
+  width: 34px;
+  height: 34px;
+  background-size: contain;
+}
+
+.header__menu-icon_open {
+  background-image: url(../../images/menu_open_white_24dp.svg);
+}
+
+.header__menu-icon_close {
+  background-image: url(../../images/close_white_24dp.svg);
 }
 
 @media screen and (max-width: 1200px) {
