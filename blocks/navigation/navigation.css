@@ -5,4 +5,59 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  top: 15px;
+  position: sticky;
+}
+
+.navigation__link {
+  display: flex;
+  font-size: 24px;
+  gap: 10px;
+  font-weight: bold;
+  font-style: italic;
+  align-items: center;
+}
+
+.navigation__link:hover {
+  opacity: 0.8;
+}
+.navigation__link-icons {
+  width: 30px;
+  height: 30px;
+  background-color: #ffd519;
+  flex-shrink: 0;
+}
+
+.navigation__link-icons_git {
+  -webkit-mask: url(../../images/github.svg) no-repeat center;
+  mask: url(../../images/github.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.navigation__link-icons_email {
+  -webkit-mask: url(../../images/email.svg) no-repeat center;
+  mask: url(../../images/email.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.navigation__link-icons_vk {
+  -webkit-mask: url(../../images/vk.svg) no-repeat center;
+  mask: url(../../images/vk.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+.navigation__link-icons_telega {
+  -webkit-mask: url(../../images/telegram.svg) no-repeat center;
+  mask: url(../../images/telegram.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation__link-icons {
+    background-color: #5932cb;
+  }
 }

@@ -2,6 +2,11 @@
   min-width: 250px;
 }
 
+.sidebar__nav {
+  height: 100%;
+  color: white;
+}
+
 @media screen and (max-width: 1200px) {
   .sidebar {
     position: absolute;
@@ -12,6 +17,7 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0.3s linear, opacity 0.3s linear;
+    clip-path: inset(0px);
   }
 
   .sidebar_show {
@@ -21,14 +27,16 @@
   }
 
   .sidebar__nav {
-    background-color: greenyellow;
-    width: 250px;
+    background-color: #ffd519;
+    color: #5932cb;
+    width: 300px;
     z-index: 2;
     position: absolute;
     top: 0;
     left: -250px;
-    height: 100%;
     transition: left 0.3s linear;
+    padding: 15px;
+    box-sizing: border-box;
   }
 
   .sidebar__nav_show {
@@ -36,7 +44,8 @@
   }
 
   .sidebar__hover {
-    background-color: green;
+    background-color: black;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
