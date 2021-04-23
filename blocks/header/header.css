@@ -1,6 +1,6 @@
 .header {
   color: white;
-  height: 50px;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
@@ -18,6 +18,7 @@
 .header__title {
   font-style: italic;
   font-size: 46px;
+  margin: 0;
 }
 
 .header__title_emoji {
@@ -51,5 +52,22 @@
 
   .header__toggle-wrapper_display_none {
     display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header__logo {
+    display: none;
+  }
+  
+    .header__menu-icon {
+      width: 44px;
+      height: 44px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+  .header__title {
+    font-size: 36px;
   }
 }
