@@ -1,14 +1,45 @@
-const toggle = document.querySelector('.header__menu-toggle');
-
 const sidebar = document.querySelector('.sidebar');
 const navMenu = sidebar.querySelector('.sidebar__nav');
+const sidebarOverlay = sidebar.querySelector('.sidebar__hover');
 
-const menuOpenBtn = toggle.querySelector('.header__toggle-wrapper_menu');
-const menuCloseBtn = toggle.querySelector('.header__toggle-wrapper_close');
+const menuBtn = document.querySelector('.header__menu-icon');
 
-toggle.addEventListener('click', () => {
-  sidebar.classList.toggle('sidebar_show');
-  navMenu.classList.toggle('sidebar__nav_show');
-  menuOpenBtn.classList.toggle('header__toggle-wrapper_display_none');
-  menuCloseBtn.classList.toggle('header__toggle-wrapper_display_none');
+const handleEscClose = (e) => {
+  if (e.key === 'Escape' && sidebar.classList.contains('sidebar_show')) {
+    handleSidebar();
+  }
+};
+
+const changeMenuBtn = () => {
+  menuBtn.classList.toggle('header__menu-icon_close');
+  menuBtn.classList.toggle('header__menu-icon_open');
+};
+
+const sidebarOpen = (e) => {
+  sidebar.classList.add('sidebar_show');
+  navMenu.classList.add('sidebar__nav_show');
+  document.addEventListener('keydown', handleEscClose);
+};
+
+const sidebarClose = (e) => {
+  sidebar.classList.remove('sidebar_show');
+  navMenu.classList.remove('sidebar__nav_show');
+  document.removeEventListener('keydown', handleEscClose);
+};
+
+const handleSidebar = () => {
+  if (!sidebar.classList.contains('sidebar_show')) {
+    sidebarOpen();
+  } else {
+    sidebarClose();
+  }
+  changeMenuBtn();
+};
+
+menuBtn.addEventListener('click', () => {
+  handleSidebar();
+});
+
+sidebarOverlay.addEventListener('click', () => {
+  handleSidebar();
 });
