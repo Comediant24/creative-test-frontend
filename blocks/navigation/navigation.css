@@ -49,6 +49,13 @@
   mask-size: contain;
 }
 
+.navigation__link-icons_code {
+  -webkit-mask: url(../../images/code.svg) no-repeat center;
+  mask: url(../../images/code.svg) no-repeat center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
 .navigation__link-icons_telega {
   -webkit-mask: url(../../images/telegram.svg) no-repeat center;
   mask: url(../../images/telegram.svg) no-repeat center;
